@@ -15,7 +15,7 @@ export default function Contact() {
     e.preventDefault();
     setStatus("sending");
     const form = e.currentTarget;
-    const data = new FormData(form);
+    const formData = new FormData(form);
      // Clean, framework-safe URL encoding
     const searchParams = new URLSearchParams();
     formData.forEach((value, key) => {
